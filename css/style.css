@@ -83,6 +83,7 @@ section {
   width: 100%;
   min-height: 90vh;
   display: grid;
+  /*background-image: url(/img/restaurant-2.png), radial-gradient(#444, #111);*/
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5rem;
   align-items: center;
@@ -106,7 +107,6 @@ section {
 
 .img-hambuger1 {
   width: 70vh;
-  opacity: 0.9;
   box-shadow: 5px 5px 10px #ff702a;
 }
 
@@ -141,7 +141,12 @@ section {
 .img-restaurant {
   width: 70vh;
   opacity: 0.9;
-  box-shadow: 5px 5px 10px #fff;
+  box-shadow: 5px 5px 10px var(--main-color);
+}
+
+.img-restaurant:hover {
+  opacity: 40%;
+  transition: 400ms;
 }
 
 .about-text span {
@@ -203,6 +208,12 @@ section {
   display: inline-block;
   width: 20vh;
   height: 20vh;
+  transition: 400ms;
+}
+
+.img-menu:hover {
+  transform: scale(1.5);
+  /*box-shadow: 10px 10px 10px #ccc;*/
 }
 
 .box h2 {
@@ -356,7 +367,6 @@ section {
   header {
     padding: 15px 40px;
   }
-
   :root {
     --big-font: 3.5rem;
     --h2-font: 2rem;
@@ -367,12 +377,10 @@ section {
   section {
     padding: 50px 8%;
   }
-
   #menu-icon {
     display: initial;
     color: var(--text-color);
   }
-
   header .navbar {
     position: absolute;
     top: -400px;
@@ -384,16 +392,13 @@ section {
     background: #2b2640;
     transition: .3s;
   }
-
   header .navbar .active {
     top: 70px;
   }
-
   .navbar a {
     padding: 1.5rem;
     display: block;
   }
-
   .col {
     width: 50%;
     margin-bottom: 10px;
@@ -404,21 +409,17 @@ section {
   header {
     padding: 10px 16px;
   }
-
   .home {
     grid-template-columns: 1fr;
     text-align: center;
   }
-
   .about {
     grid-template-columns: 1fr;
     text-align: center;
   }
-
   .about-img {
     order: 2;
   }
-
   section {
     padding: 100px 7%;
   }
