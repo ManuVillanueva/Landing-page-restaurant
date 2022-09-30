@@ -423,10 +423,10 @@ section {
     display: initial;
     color: var(--bg-color);
   }
-  /* .col {
+  .col {
     width: 50%;
     margin-bottom: 10px;
-  }  */
+  } 
 }
 
 @media (max-width: 920px) {
@@ -435,6 +435,10 @@ section {
   }
   .img-restaurant {
     width: 40vh;
+  }
+  .box-img {
+    width: 250px;
+    height: auto;
   }
 }
 
